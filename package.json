@@ -1,0 +1,24 @@
+{
+  "name": "node-app-scaffold",
+  "version": "0.0.0",
+  "description": "ERROR: No README.md file found!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": "",
+  "author": "",
+  "license": "BSD",
+  "dependencies": {
+    "expect.js": "~0.2.0",
+    "stylus": "~0.31.0",
+    "jade": "~0.27.7",
+    "omf": "0.0.2",
+    "express": "~3.0.5",
+    "mocha": "~1.7.4",
+    "engine.io": "~0.3.10",
+    "coffee-script": "~1.4.0",
+    "engine.io-client": "*",
+    "logged": "~0.2.1"
+  }
+}
