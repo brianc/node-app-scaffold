@@ -6,13 +6,16 @@ logged.on "log", (e) ->
 
 log = require("logged")(__filename)
 
-log.debug "requiring app"
-
+log.debug "loading app"
 app = require "#{__dirname}"
-sockets = require "#{__dirname}/sockets"
-
 server = http.createServer app
+
+log.debug "loading socket serve"
+sockets = require "#{__dirname}/sockets"
 sockets(server)
 
-server.listen app.get("port"), ->
-  log.info "listening on #{app.get('port')}"
+build = require app.path("app/build")
+build app, (err) ->
+  throw err if err?
+  server.listen app.get("port"), ->
+    log.info "listening on #{app.get('port')}"

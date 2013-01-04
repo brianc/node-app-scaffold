@@ -12,6 +12,9 @@ omf app, (app) ->
     res.has.statusCode 200
     res.is.html()
 
+  app.get "/index.js", (res) ->
+    res.is.javascript()
+
   describe "engine.io", ->
     sockets(app.server)
     url = "ws://localhost:#{app.port}"

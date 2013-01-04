@@ -19,6 +19,11 @@
     "engine.io": "~0.3.10",
     "coffee-script": "~1.4.0",
     "engine.io-client": "*",
-    "logged": "~0.2.1"
+    "logged": "~0.2.1",
+    "packit": "0.0.3",
+    "jquery": "*",
+    "xo": "*",
+    "mkdirp": "~0.3.4",
+    "async": "~0.1.22"
   }
 }
